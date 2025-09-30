@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\ue\\kendal\\kendal\\source\\kendalequipment\\private\\kendalequipmentsubsystem.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kendalequipment\\definitions.kendalequipment.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalequipment\\public\\kendalequipmentsubsystem.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalequipment\\uht\\kendalequipmentsubsystem.generated.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalequipment\\public\\kendalequipmentinstanced.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalequipment\\uht\\kendalequipmentinstanced.generated.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalmapmanagement\\public\\kendalmapmanagementsubsystem.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalmapmanagement\\uht\\kendalmapmanagementsubsystem.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

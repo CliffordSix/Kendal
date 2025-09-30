@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\ue\\kendal\\kendal\\source\\kendalgamemode\\private\\kendalgamemodebase.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kendalgamemode\\definitions.kendalgamemode.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalgamemode\\public\\kendalgamemodebase.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemode.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemode.generated.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalgamemode\\uht\\kendalgamemodebase.generated.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalequipment\\public\\kendalequipmentsubsystem.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalequipment\\uht\\kendalequipmentsubsystem.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

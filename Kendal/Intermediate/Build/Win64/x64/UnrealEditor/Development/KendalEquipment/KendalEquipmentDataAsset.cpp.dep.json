@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\ue\\kendal\\kendal\\source\\kendalequipment\\private\\kendalequipmentdataasset.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kendalequipment\\definitions.kendalequipment.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalequipment\\public\\kendalequipmentdataasset.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalequipment\\public\\kendalequipmentdata.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\papersprite.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\spriteeditoronlytypes.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\spriteeditoronlytypes.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\public\\slate\\slatetextureatlasinterface.h",
+            "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\slatetextureatlasinterface.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\papersprite.generated.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalequipment\\uht\\kendalequipmentdata.generated.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalequipment\\uht\\kendalequipmentdataasset.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

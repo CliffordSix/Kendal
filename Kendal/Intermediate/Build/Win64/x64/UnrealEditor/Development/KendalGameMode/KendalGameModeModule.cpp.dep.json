@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\ue\\kendal\\kendal\\source\\kendalgamemode\\private\\kendalgamemodemodule.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kendalgamemode\\definitions.kendalgamemode.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalgamemode\\public\\kendalgamemodemodule.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

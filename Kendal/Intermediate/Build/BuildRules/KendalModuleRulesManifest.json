@@ -1,0 +1,21 @@
+{
+	"SourceFiles": [
+		"C:\\UE\\Kendal\\Kendal\\Source\\Input\\Input.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalCamera\\KendalCamera.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalCharacter\\KendalCharacter.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalEquipment\\KendalEquipment.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalGameMode\\KendalGameMode.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalGameplayAbilities\\KendalGameplayAbilities.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalHud\\KendalHud.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalInteraction\\KendalInteraction.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalMapManagement\\KendalMapManagement.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalMovement\\KendalMovement.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalPlayer\\KendalPlayer.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalTileMapActorInterface\\KendalTileMapActorInterface.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalTileMap\\KendalTileMap.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\Kendal\\Kendal.Build.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\Kendal.Target.cs",
+		"C:\\UE\\Kendal\\Kendal\\Source\\KendalEditor.Target.cs"
+	],
+	"EngineVersion": "5.6.1"
+}

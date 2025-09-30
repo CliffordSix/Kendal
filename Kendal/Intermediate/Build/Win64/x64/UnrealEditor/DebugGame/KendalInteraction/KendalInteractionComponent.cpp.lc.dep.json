@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\ue\\kendal\\kendal\\source\\kendalinteraction\\private\\kendalinteractioncomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\kendalinteraction\\definitions.kendalinteraction.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalinteraction\\public\\kendalinteractioncomponent.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalinteraction\\uht\\kendalinteractioncomponent.generated.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalmapmanagement\\public\\kendalmapmanagementsubsystem.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalmapmanagement\\uht\\kendalmapmanagementsubsystem.generated.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendaltilemap\\public\\kendalpapertiledata.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\papertiledataasset.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\coreuobject\\public\\structutils\\instancedstruct.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structutils.h",
+            "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\coreuobject\\uht\\instancedstruct.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\papertiledataasset.generated.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendaltilemap\\uht\\kendalpapertiledata.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

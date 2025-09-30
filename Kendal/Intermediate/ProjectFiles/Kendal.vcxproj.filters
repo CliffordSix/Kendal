@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Kendal.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Kendal.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\KendalEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\Kendal.sln.DotSettings.user" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\Tags">
+      <UniqueIdentifier>{C23A97B6-B409-38D2-A57B-078A593D2FB3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\Tags\InputGameplayTags.ini">
+      <Filter>Config\Tags</Filter>
+    </None>
+    <Filter Include="Source\Input">
+      <UniqueIdentifier>{6841E1FF-E486-3A9D-B4DA-C4ACB9D88FCD}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Input\Input.Build.cs">
+      <Filter>Source\Input</Filter>
+    </None>
+    <Filter Include="Source\Input\Private">
+      <UniqueIdentifier>{072AB1CB-2572-3662-9466-D2EA0189B496}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Input\Private\Input.cpp">
+      <Filter>Source\Input\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Input\Private\KendalInputComponent.cpp">
+      <Filter>Source\Input\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Input\Private\KendalInputConfig.cpp">
+      <Filter>Source\Input\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Input\Public">
+      <UniqueIdentifier>{625D98D6-6ED7-3B7C-B535-4B2E902F0AD5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Input\Public\Input.h">
+      <Filter>Source\Input\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Input\Public\KendalInputComponent.h">
+      <Filter>Source\Input\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Input\Public\KendalInputConfig.h">
+      <Filter>Source\Input\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalCamera">
+      <UniqueIdentifier>{BB4428E6-1D9E-33C4-82EC-5E0D985EA6B3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalCamera\KendalCamera.Build.cs">
+      <Filter>Source\KendalCamera</Filter>
+    </None>
+    <Filter Include="Source\KendalCamera\Private">
+      <UniqueIdentifier>{41F4920A-0C4F-3B3A-8054-7FF48AC28290}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalCamera\Private\KendalCamera.cpp">
+      <Filter>Source\KendalCamera\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalCamera\Private\KendalCameraManager.cpp">
+      <Filter>Source\KendalCamera\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalCamera\Public">
+      <UniqueIdentifier>{49C50FCF-5191-3478-BFAB-47E9DD12D1C9}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalCamera\Public\KendalCamera.h">
+      <Filter>Source\KendalCamera\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalCamera\Public\KendalCameraManager.h">
+      <Filter>Source\KendalCamera\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalCharacter">
+      <UniqueIdentifier>{149176E4-921E-362E-8AB0-75A738D160AE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalCharacter\KendalCharacter.Build.cs">
+      <Filter>Source\KendalCharacter</Filter>
+    </None>
+    <Filter Include="Source\KendalCharacter\Private">
+      <UniqueIdentifier>{35D880C2-52BC-33BD-A3E6-B41DD30CDC2E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalCharacter\Private\KendalCharacter.cpp">
+      <Filter>Source\KendalCharacter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalCharacter\Private\KendalCharacterSettings.cpp">
+      <Filter>Source\KendalCharacter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalCharacter\Private\KendalPlayerCharacter.cpp">
+      <Filter>Source\KendalCharacter\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalCharacter\Private\KendalPlayerState.cpp">
+      <Filter>Source\KendalCharacter\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalCharacter\Public">
+      <UniqueIdentifier>{76234544-69B5-36F9-BE75-3F02D0EAA5FA}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalCharacter\Public\KendalCharacter.h">
+      <Filter>Source\KendalCharacter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalCharacter\Public\KendalCharacterSettings.h">
+      <Filter>Source\KendalCharacter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalCharacter\Public\KendalPlayerCharacter.h">
+      <Filter>Source\KendalCharacter\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalCharacter\Public\KendalPlayerState.h">
+      <Filter>Source\KendalCharacter\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalEquipment">
+      <UniqueIdentifier>{5734EF50-D31A-3F37-8C22-79A32D6F01FF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalEquipment\KendalEquipment.Build.cs">
+      <Filter>Source\KendalEquipment</Filter>
+    </None>
+    <Filter Include="Source\KendalEquipment\Private">
+      <UniqueIdentifier>{D56E0721-F954-3AAA-BDE6-D275BD35D3F6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalEquipment\Private\KendalEquipment.cpp">
+      <Filter>Source\KendalEquipment\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalEquipment\Private\KendalEquipmentData.cpp">
+      <Filter>Source\KendalEquipment\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalEquipment\Private\KendalEquipmentDataAsset.cpp">
+      <Filter>Source\KendalEquipment\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalEquipment\Private\KendalEquipmentDataTable.cpp">
+      <Filter>Source\KendalEquipment\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalEquipment\Private\KendalEquipmentInstanced.cpp">
+      <Filter>Source\KendalEquipment\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalEquipment\Private\KendalEquipmentManagerComponent.cpp">
+      <Filter>Source\KendalEquipment\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalEquipment\Private\KendalEquipmentSubsystem.cpp">
+      <Filter>Source\KendalEquipment\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalEquipment\Public">
+      <UniqueIdentifier>{CF74422D-71C3-33C7-9AA0-01A239E3BB9F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalEquipment\Public\KendalEquipment.h">
+      <Filter>Source\KendalEquipment\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalEquipment\Public\KendalEquipmentData.h">
+      <Filter>Source\KendalEquipment\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalEquipment\Public\KendalEquipmentDataAsset.h">
+      <Filter>Source\KendalEquipment\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalEquipment\Public\KendalEquipmentDataTable.h">
+      <Filter>Source\KendalEquipment\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalEquipment\Public\KendalEquipmentInstanced.h">
+      <Filter>Source\KendalEquipment\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalEquipment\Public\KendalEquipmentManagerComponent.h">
+      <Filter>Source\KendalEquipment\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalEquipment\Public\KendalEquipmentSubsystem.h">
+      <Filter>Source\KendalEquipment\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalGameMode">
+      <UniqueIdentifier>{5235EF0B-01C3-32C0-9E4C-1D93EDFE2929}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalGameMode\KendalGameMode.Build.cs">
+      <Filter>Source\KendalGameMode</Filter>
+    </None>
+    <Filter Include="Source\KendalGameMode\Private">
+      <UniqueIdentifier>{43AE6EF3-F2DE-3B2D-B05D-2ABE4FE13104}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalGameMode\Private\KendalGameModeBase.cpp">
+      <Filter>Source\KendalGameMode\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalGameMode\Private\KendalGameModeModule.cpp">
+      <Filter>Source\KendalGameMode\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalGameMode\Public">
+      <UniqueIdentifier>{C9042C75-29B1-3CF1-A572-F0A78EAA7D2A}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalGameMode\Public\KendalGameModeBase.h">
+      <Filter>Source\KendalGameMode\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalGameMode\Public\KendalGameModeModule.h">
+      <Filter>Source\KendalGameMode\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalGameplayAbilities">
+      <UniqueIdentifier>{948405C1-38C2-3C6A-B96C-B0CC1C0EBCC6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalGameplayAbilities\KendalGameplayAbilities.Build.cs">
+      <Filter>Source\KendalGameplayAbilities</Filter>
+    </None>
+    <Filter Include="Source\KendalGameplayAbilities\Private">
+      <UniqueIdentifier>{E5C31C3D-CE04-3198-A734-A588D90E48EA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalGameplayAbilities\Private\KendalGameplayAbilities.cpp">
+      <Filter>Source\KendalGameplayAbilities\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalGameplayAbilities\Private\KendalGameplayAbility.cpp">
+      <Filter>Source\KendalGameplayAbilities\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalGameplayAbilities\Private\KendalInteractAbility.cpp">
+      <Filter>Source\KendalGameplayAbilities\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalGameplayAbilities\Private\AbilitySystemComponent">
+      <UniqueIdentifier>{27B80ACB-7954-3AD0-9579-3452AC752F04}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalGameplayAbilities\Private\AbilitySystemComponent\KendalAbilitySystemComponent.cpp">
+      <Filter>Source\KendalGameplayAbilities\Private\AbilitySystemComponent</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalGameplayAbilities\Private\Data">
+      <UniqueIdentifier>{6D6FF22D-65B4-3706-9328-ADA6B08C642D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalGameplayAbilities\Private\Data\KendalAbilityData.cpp">
+      <Filter>Source\KendalGameplayAbilities\Private\Data</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalGameplayAbilities\Public">
+      <UniqueIdentifier>{41EBACB1-140A-3EAE-8152-6EADAA5CB97C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalGameplayAbilities\Public\KendalGameplayAbilities.h">
+      <Filter>Source\KendalGameplayAbilities\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalGameplayAbilities\Public\KendalGameplayAbility.h">
+      <Filter>Source\KendalGameplayAbilities\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalGameplayAbilities\Public\KendalInteractAbility.h">
+      <Filter>Source\KendalGameplayAbilities\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalGameplayAbilities\Public\AbilitySystemComponent">
+      <UniqueIdentifier>{89B065C4-0045-3A48-9040-D256C83FC2CD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalGameplayAbilities\Public\AbilitySystemComponent\KendalAbilitySystemComponent.h">
+      <Filter>Source\KendalGameplayAbilities\Public\AbilitySystemComponent</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalGameplayAbilities\Public\Data">
+      <UniqueIdentifier>{0B2302F9-EAAF-3DC1-BBCB-872FCCE41AE1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalGameplayAbilities\Public\Data\KendalAbilityData.h">
+      <Filter>Source\KendalGameplayAbilities\Public\Data</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalHud">
+      <UniqueIdentifier>{C63FDE8C-3C29-3716-88D0-CC01270C3AE5}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalHud\KendalHud.Build.cs">
+      <Filter>Source\KendalHud</Filter>
+    </None>
+    <Filter Include="Source\KendalHud\Private">
+      <UniqueIdentifier>{484223CF-3EC9-39C4-A16A-05620C205A34}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalHud\Private\KendalHudBase.cpp">
+      <Filter>Source\KendalHud\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalHud\Private\KendalHudModule.cpp">
+      <Filter>Source\KendalHud\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalHud\Public">
+      <UniqueIdentifier>{D71C95AD-5C21-36D7-B5BA-3E622D614F16}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalHud\Public\KendalHudBase.h">
+      <Filter>Source\KendalHud\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalHud\Public\KendalHudModule.h">
+      <Filter>Source\KendalHud\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalInteraction">
+      <UniqueIdentifier>{F14848F0-FDCE-3995-A067-4BB4E350B66C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalInteraction\KendalInteraction.Build.cs">
+      <Filter>Source\KendalInteraction</Filter>
+    </None>
+    <Filter Include="Source\KendalInteraction\Private">
+      <UniqueIdentifier>{58C607D1-DC64-3D7F-AE2E-7E2CB9CB5B7E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalInteraction\Private\KendalInteraction.cpp">
+      <Filter>Source\KendalInteraction\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalInteraction\Private\KendalInteractionComponent.cpp">
+      <Filter>Source\KendalInteraction\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalInteraction\Public">
+      <UniqueIdentifier>{81EFFCEE-81D7-3D01-A117-4479D4AF118C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalInteraction\Public\KendalInteraction.h">
+      <Filter>Source\KendalInteraction\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalInteraction\Public\KendalInteractionComponent.h">
+      <Filter>Source\KendalInteraction\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalMapManagement">
+      <UniqueIdentifier>{EF739DD8-BE75-3B46-9A89-5C2F5CF74D80}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalMapManagement\KendalMapManagement.Build.cs">
+      <Filter>Source\KendalMapManagement</Filter>
+    </None>
+    <Filter Include="Source\KendalMapManagement\Private">
+      <UniqueIdentifier>{D8350795-772B-3B35-B3B1-3FEA377CCE5A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalMapManagement\Private\KendalMapManagement.cpp">
+      <Filter>Source\KendalMapManagement\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalMapManagement\Private\KendalMapManagementSubsystem.cpp">
+      <Filter>Source\KendalMapManagement\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalMapManagement\Public">
+      <UniqueIdentifier>{745BD6B8-507D-3E60-8447-D8C391E2FC2B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalMapManagement\Public\KendalMapManagement.h">
+      <Filter>Source\KendalMapManagement\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalMapManagement\Public\KendalMapManagementSubsystem.h">
+      <Filter>Source\KendalMapManagement\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalMovement">
+      <UniqueIdentifier>{597B9397-4270-3CBB-AACA-828C52C3023E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalMovement\KendalMovement.Build.cs">
+      <Filter>Source\KendalMovement</Filter>
+    </None>
+    <Filter Include="Source\KendalMovement\Private">
+      <UniqueIdentifier>{C1604A11-2258-343E-98B4-EA9CA0D187E0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalMovement\Private\KendalCharacterMovementComponent.cpp">
+      <Filter>Source\KendalMovement\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalMovement\Private\KendalMovement.cpp">
+      <Filter>Source\KendalMovement\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalMovement\Public">
+      <UniqueIdentifier>{0CD3A8B3-821F-33A4-9BAA-8145954BD1E5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalMovement\Public\KendalCharacterMovementComponent.h">
+      <Filter>Source\KendalMovement\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalMovement\Public\KendalMovement.h">
+      <Filter>Source\KendalMovement\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalPlayer">
+      <UniqueIdentifier>{CC1BE8CE-FF7E-3D70-A60D-03EE22112F5F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalPlayer\KendalPlayer.Build.cs">
+      <Filter>Source\KendalPlayer</Filter>
+    </None>
+    <Filter Include="Source\KendalPlayer\Private">
+      <UniqueIdentifier>{10B0D07A-DD4C-3966-9456-A5D1F4948697}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalPlayer\Private\KendalPlayer.cpp">
+      <Filter>Source\KendalPlayer\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalPlayer\Private\KendalPlayerController.cpp">
+      <Filter>Source\KendalPlayer\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalPlayer\Public">
+      <UniqueIdentifier>{2EBC459D-1A71-39E6-A4E9-925C69E5D55F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalPlayer\Public\KendalPlayer.h">
+      <Filter>Source\KendalPlayer\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalPlayer\Public\KendalPlayerController.h">
+      <Filter>Source\KendalPlayer\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalTileMapActorInterface">
+      <UniqueIdentifier>{30458953-554C-311E-AE28-FCFC73CD3359}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalTileMapActorInterface\KendalTileMapActorInterface.Build.cs">
+      <Filter>Source\KendalTileMapActorInterface</Filter>
+    </None>
+    <Filter Include="Source\KendalTileMapActorInterface\Private">
+      <UniqueIdentifier>{F143A3EE-F9B2-39DC-A364-6EB7403DEE09}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalTileMapActorInterface\Private\KendalTileMapActorInterface.cpp">
+      <Filter>Source\KendalTileMapActorInterface\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalTileMapActorInterface\Private\KendalTileMapActorPositionInterface.cpp">
+      <Filter>Source\KendalTileMapActorInterface\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalTileMapActorInterface\Public">
+      <UniqueIdentifier>{5C0993DE-C780-3938-BFE3-924841511492}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalTileMapActorInterface\Public\KendalTileMapActorInterface.h">
+      <Filter>Source\KendalTileMapActorInterface\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalTileMapActorInterface\Public\KendalTileMapActorPositionInterface.h">
+      <Filter>Source\KendalTileMapActorInterface\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KendalTileMap">
+      <UniqueIdentifier>{0AAF10E4-ED79-37A6-90D8-85541F421B61}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KendalTileMap\KendalTileMap.Build.cs">
+      <Filter>Source\KendalTileMap</Filter>
+    </None>
+    <Filter Include="Source\KendalTileMap\Private">
+      <UniqueIdentifier>{32AC089E-31E7-37EC-9AE4-59F162543767}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KendalTileMap\Private\KendalTileMap.cpp">
+      <Filter>Source\KendalTileMap\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalTileMap\Private\KendalTileMapActor.cpp">
+      <Filter>Source\KendalTileMap\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalTileMap\Private\KendalTileMapComponent.cpp">
+      <Filter>Source\KendalTileMap\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalTileMap\Private\KendalTileMapModule.cpp">
+      <Filter>Source\KendalTileMap\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KendalTileMap\Private\KendalTileMapSettings.cpp">
+      <Filter>Source\KendalTileMap\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KendalTileMap\Public">
+      <UniqueIdentifier>{166925B5-8E8B-3A67-865E-FFEBF92278AE}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KendalTileMap\Public\KendalPaperTileData.h">
+      <Filter>Source\KendalTileMap\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalTileMap\Public\KendalTileMap.h">
+      <Filter>Source\KendalTileMap\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalTileMap\Public\KendalTileMapActor.h">
+      <Filter>Source\KendalTileMap\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalTileMap\Public\KendalTileMapComponent.h">
+      <Filter>Source\KendalTileMap\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalTileMap\Public\KendalTileMapModule.h">
+      <Filter>Source\KendalTileMap\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KendalTileMap\Public\KendalTileMapSettings.h">
+      <Filter>Source\KendalTileMap\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\Kendal">
+      <UniqueIdentifier>{E2021E42-D005-32F1-9195-DA170359866C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Kendal\Kendal.Build.cs">
+      <Filter>Source\Kendal</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Kendal\Kendal.cpp">
+      <Filter>Source\Kendal</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Kendal\Kendal.h">
+      <Filter>Source\Kendal</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Kendal\KendalTestClass.cpp">
+      <Filter>Source\Kendal</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Kendal\KendalTestClass.h">
+      <Filter>Source\Kendal</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

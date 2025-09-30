@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-KendalMovement.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalMovement/KendalCharacterMovementComponent.gen.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalMovement/KendalMovement.init.gen.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalMovement/KendalCharacterMovementComponent.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalMovement/KendalMovement.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalMovement/PerModuleInline.gen.cpp.obj"
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/Default.rc2.res"
+/OUT:"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalMovement/UnrealEditor-KendalMovement.lib"

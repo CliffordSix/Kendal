@@ -1,0 +1,20 @@
+{
+	"BuildId": "75429dda-06b5-460d-8f83-6526c1dc848b",
+	"Modules": 
+	{
+		"Input": "UnrealEditor-Input-Win64-DebugGame.dll",
+		"Kendal": "UnrealEditor-Kendal-Win64-DebugGame.dll",
+		"KendalCamera": "UnrealEditor-KendalCamera-Win64-DebugGame.dll",
+		"KendalCharacter": "UnrealEditor-KendalCharacter-Win64-DebugGame.dll",
+		"KendalEquipment": "UnrealEditor-KendalEquipment-Win64-DebugGame.dll",
+		"KendalGameMode": "UnrealEditor-KendalGameMode-Win64-DebugGame.dll",
+		"KendalGameplayAbilities": "UnrealEditor-KendalGameplayAbilities-Win64-DebugGame.dll",
+		"KendalHud": "UnrealEditor-KendalHud-Win64-DebugGame.dll",
+		"KendalInteraction": "UnrealEditor-KendalInteraction-Win64-DebugGame.dll",
+		"KendalMapManagement": "UnrealEditor-KendalMapManagement-Win64-DebugGame.dll",
+		"KendalMovement": "UnrealEditor-KendalMovement-Win64-DebugGame.dll",
+		"KendalPlayer": "UnrealEditor-KendalPlayer-Win64-DebugGame.dll",
+		"KendalTileMap": "UnrealEditor-KendalTileMap-Win64-DebugGame.dll",
+		"KendalTileMapActorInterface": "UnrealEditor-KendalTileMapActorInterface-Win64-DebugGame.dll"
+	}
+}

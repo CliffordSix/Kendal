@@ -1,0 +1,38 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\ue\\kendal\\kendal\\source\\kendalequipment\\private\\kendalequipmentmanagercomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kendalequipment\\definitions.kendalequipment.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendalequipment\\public\\kendalequipmentmanagercomponent.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\runtime\\modulargameplay\\source\\modulargameplay\\public\\components\\pawncomponent.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\runtime\\modulargameplay\\source\\modulargameplay\\public\\components\\gameframeworkcomponent.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\runtime\\modulargameplay\\intermediate\\build\\win64\\unrealeditor\\inc\\modulargameplay\\uht\\gameframeworkcomponent.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\runtime\\modulargameplay\\intermediate\\build\\win64\\unrealeditor\\inc\\modulargameplay\\uht\\pawncomponent.generated.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendalequipment\\uht\\kendalequipmentmanagercomponent.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\classes\\engine\\assetmanager.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\classes\\engine\\assetmanagertypes.h",
+            "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\assetmanagertypes.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\coreuobject\\public\\misc\\assetregistryinterface.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\classes\\engine\\streamablemanager.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\experimental\\iostore\\ondemandcore\\public\\io\\iostoreondemand.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\core\\public\\containers\\sharedstring.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\experimental\\iostore\\ondemandcore\\public\\io\\ondemandhostgroup.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\experimental\\iostore\\ondemandcore\\public\\io\\ondemandtoc.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\core\\public\\io\\iocontainerid.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\coreuobject\\public\\misc\\packageaccesstracking.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\core\\public\\misc\\sourcelocationutils.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\classes\\engine\\experimental\\streamablemanagererror.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\assetregistrymodule.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\assetregistry\\public\\assetregistry\\iassetregistry.h",
+            "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\assetregistry\\uht\\iassetregistry.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\core\\public\\genericplatform\\genericplatformchunkinstall.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\classes\\engine\\contentencryptionconfig.h",
+            "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\assetmanager.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

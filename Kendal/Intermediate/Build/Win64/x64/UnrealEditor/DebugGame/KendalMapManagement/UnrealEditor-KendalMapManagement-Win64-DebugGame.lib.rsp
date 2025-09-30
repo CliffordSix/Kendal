@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-KendalMapManagement-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.NonOptimized.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/KendalMapManagement/KendalMapManagement.init.gen.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/KendalMapManagement/KendalMapManagementSubsystem.gen.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/KendalMapManagement/KendalMapManagement.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/KendalMapManagement/KendalMapManagementSubsystem.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/KendalMapManagement/PerModuleInline.gen.cpp.obj"
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/Default.rc2.res"
+/OUT:"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/KendalMapManagement/UnrealEditor-KendalMapManagement-Win64-DebugGame.lib"

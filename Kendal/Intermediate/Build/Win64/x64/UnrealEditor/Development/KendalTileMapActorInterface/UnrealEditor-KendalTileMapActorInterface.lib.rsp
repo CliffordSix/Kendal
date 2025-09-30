@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-KendalTileMapActorInterface.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalTileMapActorInterface/KendalTileMapActorInterface.init.gen.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalTileMapActorInterface/KendalTileMapActorPositionInterface.gen.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalTileMapActorInterface/KendalTileMapActorInterface.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalTileMapActorInterface/KendalTileMapActorPositionInterface.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalTileMapActorInterface/PerModuleInline.gen.cpp.obj"
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/Default.rc2.res"
+/OUT:"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/Development/KendalTileMapActorInterface/UnrealEditor-KendalTileMapActorInterface.lib"

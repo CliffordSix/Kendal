@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Kendal",
+			"Path": "..\\Source\\Kendal.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "KendalEditor",
+			"Path": "..\\Source\\KendalEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

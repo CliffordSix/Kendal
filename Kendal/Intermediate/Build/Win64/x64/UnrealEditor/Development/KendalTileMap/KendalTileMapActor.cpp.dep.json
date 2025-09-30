@@ -1,0 +1,38 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\ue\\kendal\\kendal\\source\\kendaltilemap\\private\\kendaltilemapactor.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kendaltilemap\\definitions.kendaltilemap.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendaltilemap\\public\\kendaltilemapactor.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\papertiledataasset.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\coreuobject\\public\\structutils\\instancedstruct.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structutils.h",
+            "c:\\ue\\kendal\\engine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\coreuobject\\uht\\instancedstruct.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\papertiledataasset.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\papertilelayer.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\papertilelayer.generated.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendaltilemap\\uht\\kendaltilemapactor.generated.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendaltilemap\\public\\kendalpapertiledata.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendaltilemap\\uht\\kendalpapertiledata.generated.h",
+            "c:\\ue\\kendal\\kendal\\source\\kendaltilemap\\public\\kendaltilemapsettings.h",
+            "c:\\ue\\kendal\\kendal\\intermediate\\build\\win64\\unrealeditor\\inc\\kendaltilemap\\uht\\kendaltilemapsettings.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\papertilemapcomponent.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\papertilemapcomponent.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\papertilemap.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\papertilemap.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\papertileset.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\spriteeditoronlytypes.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\spriteeditoronlytypes.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\intmargin.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\intmargin.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\papertileset.generated.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\engine\\public\\net\\unrealnetwork.h",
+            "c:\\ue\\kendal\\engine\\engine\\source\\runtime\\net\\core\\public\\net\\core\\propertyconditions\\propertyconditions.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

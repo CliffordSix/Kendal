@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Kendal-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.NonOptimized.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/Kendal/Kendal.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/Kendal/KendalTestClass.cpp.obj"
+"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/Kendal/PerModuleInline.gen.cpp.obj"
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/Default.rc2.res"
+/OUT:"C:/UE/Kendal/Kendal/Intermediate/Build/Win64/x64/UnrealEditor/DebugGame/Kendal/UnrealEditor-Kendal-Win64-DebugGame.lib"

@@ -1,0 +1,20 @@
+{
+	"BuildId": "75429dda-06b5-460d-8f83-6526c1dc848b",
+	"Modules": 
+	{
+		"Input": "UnrealEditor-Input.dll",
+		"Kendal": "UnrealEditor-Kendal.dll",
+		"KendalCamera": "UnrealEditor-KendalCamera.dll",
+		"KendalCharacter": "UnrealEditor-KendalCharacter.dll",
+		"KendalEquipment": "UnrealEditor-KendalEquipment.dll",
+		"KendalGameMode": "UnrealEditor-KendalGameMode.dll",
+		"KendalGameplayAbilities": "UnrealEditor-KendalGameplayAbilities.dll",
+		"KendalHud": "UnrealEditor-KendalHud.dll",
+		"KendalInteraction": "UnrealEditor-KendalInteraction.dll",
+		"KendalMapManagement": "UnrealEditor-KendalMapManagement.dll",
+		"KendalMovement": "UnrealEditor-KendalMovement.dll",
+		"KendalPlayer": "UnrealEditor-KendalPlayer.dll",
+		"KendalTileMap": "UnrealEditor-KendalTileMap.dll",
+		"KendalTileMapActorInterface": "UnrealEditor-KendalTileMapActorInterface.dll"
+	}
+}
