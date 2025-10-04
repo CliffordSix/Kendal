@@ -43,6 +43,7 @@ public:
 protected:
 	virtual void OnTransformUpdated(USceneComponent* UpdatedComponent, EUpdateTransformFlags UpdateTransformFlags, ETeleportType Teleport);
 	virtual void Move(const FInputActionValue& InputActionValue);
+	virtual void ModifyQuickSelect(const FInputActionValue& InputActionValue);
 
 private:
 	//TODO Move to a differentComponent

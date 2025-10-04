@@ -13,9 +13,10 @@ enum class EKendalPaperTileInteractionFlags : uint8
 {
 	None = 0 UMETA(Hidden),
 	Tillable = 1 << 0,
-	Mineable = 1 << 1,
+	Minable = 1 << 1,
 	Choppable = 1 << 2,
 	Waterable = 1 << 3,
+	Collectable = 1 << 4,
 };
 
 /*

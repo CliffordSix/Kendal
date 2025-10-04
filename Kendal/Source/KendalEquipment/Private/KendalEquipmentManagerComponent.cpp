@@ -38,6 +38,34 @@ void UKendalEquipmentManagerComponent::AddInventoryItem(const FName& ItemId)
 	}
 }
 
+void UKendalEquipmentManagerComponent::IncrementQuickSelectIndex()
+{
+	QuickSelectIndex++;
+	if (QuickSelectIndex > 9)
+	{
+		QuickSelectIndex = 0;
+	}
+
+	if (EquipmentViewModel.IsValid())
+	{
+		EquipmentViewModel->SetQuickSelectIndex(QuickSelectIndex);
+	}
+}
+
+void UKendalEquipmentManagerComponent::DecrementQuickSelectIndex()
+{
+	QuickSelectIndex--;
+	if (QuickSelectIndex < 0)
+	{
+		QuickSelectIndex = 9;
+	}
+
+	if (EquipmentViewModel.IsValid())
+	{
+		EquipmentViewModel->SetQuickSelectIndex(QuickSelectIndex);
+	}
+}
+
 void UKendalEquipmentManagerComponent::InitializeViewModel()
 {
 	const UGameInstance* GameInstance = GetWorld()->GetGameInstance();

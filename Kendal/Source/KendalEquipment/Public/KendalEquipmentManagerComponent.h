@@ -48,6 +48,9 @@ public:
 
 	void AddInventoryItem(const FName& ItemId);
 
+	void IncrementQuickSelectIndex();
+	void DecrementQuickSelectIndex();
+
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadWrite, Category="Components")
 	TArray<UKendalEquipmentData*> Inventory;
 
@@ -58,4 +61,7 @@ private:
 
 	UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
 	int32 InventorySize = 8;
+
+	//Index used for the QuickSelectionBar.
+	int32 QuickSelectIndex = 0;
 };

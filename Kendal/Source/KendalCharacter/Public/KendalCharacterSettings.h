@@ -19,7 +19,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Input Tags")
 	static FGameplayTag GetMovementInputTag();
 
+	UFUNCTION(BlueprintCallable, Category = "Input Tags")
+	static FGameplayTag GetQuickSelectionInputTag();
 private:
 	UPROPERTY(Config, EditAnywhere)
 	FGameplayTag MovementInputTag;
+
+	UPROPERTY(Config, EditAnywhere)
+	FGameplayTag QuickSelectionInputTag;
 };

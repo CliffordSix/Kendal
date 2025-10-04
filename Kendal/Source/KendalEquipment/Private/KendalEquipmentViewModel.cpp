@@ -11,3 +11,9 @@ void UKendalEquipmentViewModel::AddEquipmentItem(UKendalEquipmentData* Item)
 void UKendalEquipmentViewModel::RemoveEquipmentItem(const UKendalEquipmentData& Item)
 {
 }
+
+void UKendalEquipmentViewModel::SetQuickSelectIndex(int32 Index)
+{
+	QuickSelectionIndex = Index;
+	UE_MVVM_BROADCAST_FIELD_VALUE_CHANGED(QuickSelectionIndex);
+}

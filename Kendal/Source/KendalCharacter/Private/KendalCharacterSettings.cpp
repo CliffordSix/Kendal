@@ -8,3 +8,9 @@ FGameplayTag UKendalCharacterSettings::GetMovementInputTag()
 	const UKendalCharacterSettings* Settings = GetMutableDefault<UKendalCharacterSettings>();
 	return Settings->MovementInputTag;
 }
+
+FGameplayTag UKendalCharacterSettings::GetQuickSelectionInputTag()
+{
+	const UKendalCharacterSettings* Settings = GetMutableDefault<UKendalCharacterSettings>();
+	return Settings->QuickSelectionInputTag;
+}

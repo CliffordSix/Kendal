@@ -71,6 +71,15 @@ void AKendalPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 		&ThisClass::Move,
 		true
 	);
+
+	KendalInputComponent->BindNativeAction(
+		InputConfig,
+		UKendalCharacterSettings::GetQuickSelectionInputTag(),
+		ETriggerEvent::Triggered,
+		this,
+		&ThisClass::ModifyQuickSelect,
+		true
+	);
 }
 
 void AKendalPlayerCharacter::BeginPlay()
@@ -158,6 +167,24 @@ void AKendalPlayerCharacter::Move(const FInputActionValue& InputActionValue)
 			}
 			LastFacingDirection = FVector2D(Value.X, Value.Y);
 		}
+	}
+}
+
+void AKendalPlayerCharacter::ModifyQuickSelect(const FInputActionValue& InputActionValue)
+{
+	if (!IsValid(EquipmentComponent))
+	{
+		return;
+	}
+
+	const float Value = InputActionValue.Get<float>();
+	if (Value > 0.0f)
+	{
+		EquipmentComponent->IncrementQuickSelectIndex();
+	}
+	else
+	{
+		EquipmentComponent->DecrementQuickSelectIndex();
 	}
 }
 

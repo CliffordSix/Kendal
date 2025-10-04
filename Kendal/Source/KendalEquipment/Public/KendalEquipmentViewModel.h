@@ -21,7 +21,12 @@ public:
 	void AddEquipmentItem(UKendalEquipmentData* Item);
 	void RemoveEquipmentItem(const UKendalEquipmentData& Item);
 
+	void SetQuickSelectIndex(int32 Index);
+
 private:
 	UPROPERTY(BlueprintReadOnly, FieldNotify, meta=(AllowPrivateAccess))
 	TArray<UKendalEquipmentData*> EquipmentItems;
+
+	UPROPERTY(BlueprintReadOnly, FieldNotify, meta=(AllowPrivateAccess))
+	int32 QuickSelectionIndex;
 };
