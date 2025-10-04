@@ -2,6 +2,8 @@
 
 
 #include "KendalInteractAbility.h"
+#include "PaperZDAnimationComponent.h"
+#include "PaperZDAnimInstance.h"
 
 #include "KendalTileMapActorPositionInterface.h"
 
@@ -42,6 +44,13 @@ void UKendalInteractAbility::ActivateAbility(const FGameplayAbilitySpecHandle Ha
 	{
 		K2_EndAbility();
 		return;
+	}
+
+	auto* PaperZDAnimationComponent = OwningPawn->GetComponentByClass<UPaperZDAnimationComponent>();
+	if (IsValid(PaperZDAnimationComponent))
+	{
+		auto* AnimInstance = PaperZDAnimationComponent->GetSequencerAnimInstance();
+		AnimInstance->PlayAnimationOverride(InteractionAnimation.Get());
 	}
 
 	const FVector LastControlInputVector = OwningPawn->GetLastMovementInputVector();

@@ -25,6 +25,7 @@ public class KendalGameplayAbilities : ModuleRules
                 "KendalTileMapActorInterface",
                 "Slate",
                 "SlateCore",
+                "PaperZD"
             }
         );
     }
