@@ -1,19 +1,16 @@
 ﻿using UnrealBuildTool;
 
-public class KendalEquipment : ModuleRules
+public class KendalEquipmentUI : ModuleRules
 {
-    public KendalEquipment(ReadOnlyTargetRules Target) : base(Target)
+    public KendalEquipmentUI(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(
             new string[]
             {
-                "EngineAssetDefinitions",
                 "Core",
                 "ModelViewViewModel",
-                "ModularGameplay", 
-                "Paper2D",
             }
         );
 
@@ -22,10 +19,8 @@ public class KendalEquipment : ModuleRules
             {
                 "CoreUObject",
                 "Engine",
-                "KendalEquipmentUI",
-                "KendalMapManagement",
                 "Slate",
-                "SlateCore",
+                "SlateCore"
             }
         );
     }

@@ -7,9 +7,10 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputMappingContext.h"
 #include "KendalCharacterSettings.h"
+#include "KendalEquipmentManagerComponent.h"
 #include "KendalMapManagementSubsystem.h"
 #include "KendalPlayerState.h"
-#include "../../../../Engine/Engine/Plugins/PaperZD8b0e064aa89dV19/Source/PaperZD/Public/PaperZDAnimationComponent.h"
+#include "PaperZDAnimationComponent.h"
 #include "AbilitySystemComponent/KendalAbilitySystemComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -38,6 +39,9 @@ AKendalPlayerCharacter::AKendalPlayerCharacter(const FObjectInitializer& ObjectI
 	InteractionComponent = CreateDefaultSubobject<UKendalInteractionComponent>("Interaction Component");
 
 	GetCapsuleComponent()->SetEnableGravity(false);
+
+	EquipmentComponent = CreateDefaultSubobject<UKendalEquipmentManagerComponent>(TEXT("EquipmentManagerComponent"));
+	EquipmentComponent->SetIsReplicated(true);
 }
 
 void AKendalPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

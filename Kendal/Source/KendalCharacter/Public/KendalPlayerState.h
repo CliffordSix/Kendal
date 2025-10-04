@@ -7,7 +7,6 @@
 
 #include "KendalPlayerState.generated.h"
 
-class UKendalEquipmentManagerComponent;
 class UKendalAbilityData;
 class UKendalAbilitySystemComponent;
 
@@ -26,8 +25,6 @@ public:
 
 	UKendalAbilitySystemComponent* GetAbilitySystemComponent() const { return KendalAbilitySystemComponent.Get(); }
 
-	UKendalEquipmentManagerComponent* GetEquipmentComponent() const { return EquipmentComponent.Get(); }
-
 protected:
 	UFUNCTION()
 	void PawnSet(APlayerState* Player, APawn* NewPawn, APawn* OldPawn);
@@ -35,9 +32,6 @@ protected:
 	virtual void InitialiseAbilitySystemComponent(APawn* Pawn);
 
 private:
-	UPROPERTY(VisibleAnywhere, Category = "Equipment")
-	TObjectPtr<UKendalEquipmentManagerComponent> EquipmentComponent;
-
 	UPROPERTY(VisibleAnywhere, Category = "Abilities")
 	TObjectPtr<UKendalAbilitySystemComponent> KendalAbilitySystemComponent;
 

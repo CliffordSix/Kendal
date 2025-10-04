@@ -23,6 +23,15 @@ public:
 	virtual	void Tick(float DeltaTime) override;
 
 	void InitialiseInWorld(const FVector& WorldPosition, const FName& InItemId);
+	void ResetToPool();
+
+	UFUNCTION()
+	void OnOverlap(UPrimitiveComponent* OverlappedComponent,
+		           AActor* OtherActor,
+		           UPrimitiveComponent* OtherComp,
+		           int OtherBodyIndex,
+		           bool bFromSweep,
+		           const FHitResult& SweepResult);
 
 private:
 	UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))

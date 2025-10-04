@@ -33,6 +33,6 @@ public class KendalEditorTarget : TargetRules
 
 	private void RegisterModulesCreatedByRider()
 	{
-		ExtraModuleNames.AddRange(new string[] { "KendalCamera" });
+		ExtraModuleNames.AddRange(new string[] { "KendalCamera", "KendalEquipmentUI" });
 	}
 }

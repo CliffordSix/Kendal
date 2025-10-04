@@ -10,19 +10,19 @@
 /**
  * Kendal Equipment Data base class.
  */
-UCLASS(EditInlineNew, DefaultToInstanced, CollapseCategories, DisplayName = "Single Item")
+UCLASS(BlueprintType, EditInlineNew, DefaultToInstanced, CollapseCategories, DisplayName = "Single Item")
 class KENDALEQUIPMENT_API UKendalEquipmentData : public UObject
 {
 	GENERATED_BODY()
 
 public:
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	FName GetEquipmentName() const { return EquipmentName; }
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	UPaperSprite* GetSprite() const { return ItemSprite; }
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	float GetDrawScale() const { return DrawScale; }
 
 private:

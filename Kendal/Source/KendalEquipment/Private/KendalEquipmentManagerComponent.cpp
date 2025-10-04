@@ -3,19 +3,64 @@
 
 #include "KendalEquipmentManagerComponent.h"
 
+#include "KendalEquipmentDataAsset.h"
+#include "KendalEquipmentViewModel.h"
+#include "MVVMGameSubsystem.h"
+#include "AssetRegistry/AssetData.h"
+#include "Types/MVVMViewModelCollection.h"
+#include "Types/MVVMViewModelContext.h"
+
 #include "Engine/AssetManager.h"
+#include "Engine/Engine.h"
+#include "Engine/GameInstance.h"
 
 void UKendalEquipmentManagerComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
+	InitializeViewModel();
+}
+
+void UKendalEquipmentManagerComponent::AddInventoryItem(const FName& ItemId)
+{
 	const auto& AssetManager = UAssetManager::Get();
 
-	TArray<FPrimaryAssetId> AssetIdList;
-	AssetManager.GetPrimaryAssetIdList(FName("KendalEquipment"), AssetIdList);
+	FAssetData Data;
+	AssetManager.GetPrimaryAssetData(FPrimaryAssetId("KendalEquipment", ItemId), Data);
 
-	for (const auto& AssetId : AssetIdList)
+	const UKendalEquipmentDataAsset* Object = Cast<UKendalEquipmentDataAsset>(Data.GetAsset());
+	UKendalEquipmentData* Item = Object->EquipmentData;
+	Inventory.Add(Item);
+
+	if (EquipmentViewModel.IsValid())
 	{
-		UE_LOG(LogTemp, Display, TEXT("%s"), *AssetId.ToString());
+		EquipmentViewModel->AddEquipmentItem(Item);
+	}
+}
+
+void UKendalEquipmentManagerComponent::InitializeViewModel()
+{
+	const UGameInstance* GameInstance = GetWorld()->GetGameInstance();
+	if (!IsValid(GameInstance))
+	{
+		return;
+	}
+
+	const UMVVMGameSubsystem* ViewModelSubsystem = GameInstance->GetSubsystem<UMVVMGameSubsystem>();
+	check(ViewModelSubsystem)
+
+	UMVVMViewModelCollectionObject* GlobalViewModelCollection = ViewModelSubsystem->GetViewModelCollection();
+	if (!ensure(IsValid(GlobalViewModelCollection)))
+	{
+		return;
+	}
+
+	EquipmentViewModel = NewObject<UKendalEquipmentViewModel>();
+	FMVVMViewModelContext EquipmentViewModelContext;
+	EquipmentViewModelContext.ContextClass = UKendalEquipmentViewModel::StaticClass();
+	EquipmentViewModelContext.ContextName = "Equipment";
+	if(EquipmentViewModelContext.IsValid())
+	{
+		GlobalViewModelCollection->AddViewModelInstance(EquipmentViewModelContext, EquipmentViewModel.Get());
 	}
 }

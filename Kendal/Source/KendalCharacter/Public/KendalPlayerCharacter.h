@@ -9,6 +9,7 @@
 #include "PaperCharacter.h"
 #include "KendalPlayerCharacter.generated.h"
 
+class UKendalEquipmentManagerComponent;
 class UPaperZDAnimationComponent;
 class UKendalAbilitySystemComponent;
 class UCameraComponent;
@@ -37,6 +38,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FVector2D GetLastFacingDirection() const { return LastFacingDirection; }
 
+	UKendalEquipmentManagerComponent* GetEquipmentComponent() const { return EquipmentComponent.Get(); }
+
 protected:
 	virtual void OnTransformUpdated(USceneComponent* UpdatedComponent, EUpdateTransformFlags UpdateTransformFlags, ETeleportType Teleport);
 	virtual void Move(const FInputActionValue& InputActionValue);
@@ -60,6 +63,9 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
 	TObjectPtr<UKendalInteractionComponent> InteractionComponent;
+
+	UPROPERTY(VisibleAnywhere, Category = "Equipment")
+	TObjectPtr<UKendalEquipmentManagerComponent> EquipmentComponent;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "InputSystem|Input", meta=(AllowPrivateAccess=true))
 	TObjectPtr<UKendalInputConfig> InputConfig;

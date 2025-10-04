@@ -7,6 +7,33 @@
 
 #include "KendalEquipmentManagerComponent.generated.h"
 
+class UKendalEquipmentData;
+class UKendalEquipmentViewModel;
+
+USTRUCT(BlueprintType)
+struct FKendalInventoryItem
+{
+	GENERATED_BODY()
+
+	FKendalInventoryItem()
+	{
+		AssetId = FPrimaryAssetId();
+		Quantity = 0;
+	};
+
+	FKendalInventoryItem(const FPrimaryAssetId& InAssetId, const int32 InQuantity)
+	{
+		AssetId = InAssetId;
+		Quantity = InQuantity;
+	}
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Inventory")
+	FPrimaryAssetId AssetId;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Inventory")
+	int32 Quantity;
+};
+
 /*
  * Pawn Component used to manage equipment for a character. The intention is for players but lets not rule
  * out using this on NPCs
@@ -18,4 +45,17 @@ class KENDALEQUIPMENT_API UKendalEquipmentManagerComponent : public UPawnCompone
 
 public:
 	virtual void BeginPlay() override;
+
+	void AddInventoryItem(const FName& ItemId);
+
+	UPROPERTY(VisibleDefaultsOnly, BlueprintReadWrite, Category="Components")
+	TArray<UKendalEquipmentData*> Inventory;
+
+private:
+	void InitializeViewModel();
+
+	TWeakObjectPtr<UKendalEquipmentViewModel> EquipmentViewModel;
+
+	UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
+	int32 InventorySize = 8;
 };

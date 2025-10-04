@@ -5,15 +5,11 @@
 #include "KendalGameplayAbility.h"
 #include "AbilitySystemComponent/KendalAbilitySystemComponent.h"
 #include "Data/KendalAbilityData.h"
-#include "KendalEquipment/Public/KendalEquipmentManagerComponent.h"
 
 AKendalPlayerState::AKendalPlayerState()
 {
 	KendalAbilitySystemComponent = CreateDefaultSubobject<UKendalAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 	KendalAbilitySystemComponent->SetIsReplicated(true);
-
-	EquipmentComponent = CreateDefaultSubobject<UKendalEquipmentManagerComponent>(TEXT("EquipmentManagerComponent"));
-	EquipmentComponent->SetIsReplicated(true);
 }
 
 void AKendalPlayerState::PostInitializeComponents()
