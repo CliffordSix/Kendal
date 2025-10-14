@@ -5,6 +5,7 @@
 
 #include "KendalMapManagementSubsystem.h"
 #include "Engine/World.h"
+#include "KendalEquipment/Public/KendalEquipmentManagerComponent.h"
 #include "KendalTileMap/Public/KendalPaperTileData.h"
 
 #if !UE_BUILD_SHIPPING
@@ -59,6 +60,20 @@ void UKendalInteractionComponent::InteractTargetTile(const FVector2D& TargetTile
 	{
 		return;
 	}
+
+	auto* Owner = GetOwner();
+	if (!IsValid(Owner))
+	{
+		return;
+	}
+
+	const auto* EquipmentManagerComponent = Owner->GetComponentByClass<UKendalEquipmentManagerComponent>();
+	if (!IsValid(EquipmentManagerComponent))
+	{
+		return;
+	}
+
+	EquipmentManagerComponent->GetQuickSelectIndex();
 
 	if (MapSubsystem->IsTileInteractable(PreviousTargetLocation, EKendalPaperTileInteractionFlags::Tillable))
 	{

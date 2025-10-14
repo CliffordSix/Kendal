@@ -25,6 +25,22 @@ struct FKendalAbilityData_GameplayAbility
 };
 
 /**
+ *	Data used by the ability set to grant attribute sets.
+ */
+USTRUCT(BlueprintType)
+struct FKendalAbilityData_AttributeSet
+{
+	GENERATED_BODY()
+
+	// Gameplay effect to grant.
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<class UAttributeSet> AttributeSet;
+
+	UPROPERTY(EditDefaultsOnly)
+	TObjectPtr<UDataTable> DefaultAttributeData;
+};
+
+/**
  * Data asset containing Kendal Gameplay Ability Data
  */
 UCLASS()
@@ -35,4 +51,7 @@ class KENDALGAMEPLAYABILITIES_API UKendalAbilityData : public UPrimaryDataAsset
 public:
 	UPROPERTY(EditDefaultsOnly, Meta = (EditInline, Categories = "Abilities"))
 	TArray<FKendalAbilityData_GameplayAbility> GameplayAbilities;
+
+	UPROPERTY(EditDefaultsOnly, Meta = (EditInline, Categories = "Attributes"))
+	TArray<FKendalAbilityData_AttributeSet> GameplayAttributes;
 };

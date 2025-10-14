@@ -51,6 +51,7 @@ public:
 	void IncrementQuickSelectIndex();
 	void DecrementQuickSelectIndex();
 
+	int32 GetQuickSelectIndex() const { return QuickSelectIndex; }
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadWrite, Category="Components")
 	TArray<UKendalEquipmentData*> Inventory;
 

@@ -18,6 +18,7 @@ public class KendalInteraction : ModuleRules
             {
                 "CoreUObject",
                 "Engine",
+                "KendalEquipment",
                 "KendalTileMap",
                 "KendalMapManagement",
                 "Slate",

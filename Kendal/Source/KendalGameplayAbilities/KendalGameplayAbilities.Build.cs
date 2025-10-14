@@ -20,6 +20,7 @@ public class KendalGameplayAbilities : ModuleRules
             new string[]
             {
                 "CoreUObject",
+                "DeveloperSettings",
                 "Engine",
                 "GameplayTasks",
                 "KendalTileMapActorInterface",

@@ -6,8 +6,9 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "KendalCharacterMovementComponent.generated.h"
 
+struct FOnAttributeChangeData;
 /*
- * Extends Charactermovement component to better accomodate a top down 2d character
+ * Extends Character movement component to better accomodate a top down 2d character
  */
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class KENDALMOVEMENT_API UKendalCharacterMovementComponent : public UCharacterMovementComponent
@@ -29,4 +30,7 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
+
+private:
+	void OnMaxWalkSpeedChanged(const FOnAttributeChangeData& AttributeChangeData);
 };

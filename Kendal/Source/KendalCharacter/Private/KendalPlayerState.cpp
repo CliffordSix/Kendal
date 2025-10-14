@@ -31,7 +31,6 @@ void AKendalPlayerState::PostInitializeComponents()
 	{
 		InitialiseAbilitySystemComponent(Pawn);
 	}
-	
 }
 
 void AKendalPlayerState::PawnSet(APlayerState* Player, APawn* NewPawn, APawn* OldPawn)
@@ -51,6 +50,20 @@ void AKendalPlayerState::InitialiseAbilitySystemComponent(APawn* Pawn)
 
 	if (IsValid(DefaultAbilities))
 	{
+		// Grant the attribute sets.
+		for (const auto& [AttributeSet, DefaultAttributeData] : DefaultAbilities->GameplayAttributes)
+		{
+			if (!IsValid(AttributeSet))
+			{
+				continue;
+			}
+
+			UAttributeSet* NewSet = NewObject<UAttributeSet>(KendalAbilitySystemComponent->GetOwner(), AttributeSet);
+			KendalAbilitySystemComponent->AddAttributeSetSubobject(NewSet);
+
+			NewSet->InitFromMetaDataTable(DefaultAttributeData);
+		}
+
 		for (const auto& [AbilityClass, InputTag] : DefaultAbilities->GameplayAbilities)
 		{
 			if (!IsValid(AbilityClass))

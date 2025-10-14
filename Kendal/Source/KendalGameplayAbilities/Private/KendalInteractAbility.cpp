@@ -2,6 +2,8 @@
 
 
 #include "KendalInteractAbility.h"
+
+#include "KendalAbilitySettings.h"
 #include "PaperZDAnimationComponent.h"
 #include "PaperZDAnimInstance.h"
 
@@ -65,5 +67,12 @@ void UKendalInteractAbility::ActivateAbility(const FGameplayAbilitySpecHandle Ha
 	TileLocation += FVector2D(FMath::CeilToInt(LastControlInputVector.X), FMath::CeilToInt(LastControlInputVector.Y));
 
 	InteractionComponent->InteractTargetTile(TileLocation);
+
+	UGameplayEffect* InteractionEffect = UKendalAbilitySettings::GetInteractionGameplayEffect();
+	FGameplayEffectSpec* GESpec = new FGameplayEffectSpec(InteractionEffect, {}, 0.f);
+	const float AnimationDuration = InteractionAnimation.Get()->GetTotalDuration();
+	GESpec->SetByCallerTagMagnitudes.Add(FGameplayTag::RequestGameplayTag("SetByCaller.Effect.Duration"), AnimationDuration);
+	ApplyGameplayEffectSpecToOwner(Handle, ActorInfo, ActivationInfo, FGameplayEffectSpecHandle(GESpec));
+
 	K2_EndAbility();
 }

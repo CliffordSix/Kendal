@@ -3,39 +3,59 @@
 
 #include "KendalCharacterMovementComponent.h"
 
+#include "AttributeSet.h"
+#include "AbilitySystemComponent/KendalAbilitySystemComponent.h"
+#include "Attributes/KendalMovementAttributeSet.h"
+#include "GameFramework/Pawn.h"
+#include "GameFramework/PlayerState.h"
 
-// Sets default values for this component's properties
 UKendalCharacterMovementComponent::UKendalCharacterMovementComponent()
 {
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
-	// ...
 }
 
-
-// Called when the game starts
 void UKendalCharacterMovementComponent::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// ...
 	
+	// Make sure that everything is still valid, and that we are allowed to move.
+	if (!IsValid(PawnOwner))
+	{
+		return;
+	}
+
+	const auto* PlayerState = PawnOwner->GetPlayerState();
+	if (!IsValid(PlayerState))
+	{
+		return;
+	}
+
+	auto* AbilitySystem = PlayerState->GetComponentByClass<UKendalAbilitySystemComponent>();
+	if (IsValid(AbilitySystem))
+	{
+		bool bFound;
+		AbilitySystem->GetGameplayAttributeValueChangeDelegate(UKendalMovementAttributeSet::GetMaxWalkSpeedAttribute()).AddUObject(this, &ThisClass::OnMaxWalkSpeedChanged);
+		const auto MaxWalkSpeedValue = AbilitySystem->GetGameplayAttributeValue(UKendalMovementAttributeSet::GetMaxWalkSpeedAttribute(), bFound);
+		if (bFound)
+		{
+			FOnAttributeChangeData Data;
+			Data.NewValue = MaxWalkSpeedValue;
+			Data.OldValue = MaxWalkSpeedValue;
+			OnMaxWalkSpeedChanged(Data);
+		}
+	}
 }
 
 bool UKendalCharacterMovementComponent::IsFalling() const
 {
-	return false;
+	return Super::IsFalling();
 }
 
-
-// Called every frame
 void UKendalCharacterMovementComponent::TickComponent(float DeltaTime, ELevelTick TickType,
                                                       FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
+/*
 	// Make sure that everything is still valid, and that we are allowed to move.
 	if (!PawnOwner || !UpdatedComponent || ShouldSkipUpdate(DeltaTime))
 	{
@@ -55,5 +75,10 @@ void UKendalCharacterMovementComponent::TickComponent(float DeltaTime, ELevelTic
 			SlideAlongSurface(DesiredMovementThisFrame, 1.f - Hit.Time, Hit.Normal, Hit, false);
 		}
 	}
+	*/
 }
 
+void UKendalCharacterMovementComponent::OnMaxWalkSpeedChanged(const FOnAttributeChangeData& AttributeChangeData)
+{
+	MaxWalkSpeed = AttributeChangeData.NewValue;
+}

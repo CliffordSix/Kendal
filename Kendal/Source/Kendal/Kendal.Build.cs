@@ -13,6 +13,9 @@ public class Kendal : ModuleRules
 			"Core", 
 			"CoreUObject",
 			"Engine",
+			"GameplayAbilities",
+			"GameplayTasks",
+			"GameplayTags",
 			"InputCore",
 			"EnhancedInput"
 		});

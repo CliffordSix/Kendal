@@ -18,6 +18,8 @@ public class KendalMovement : ModuleRules
             {
                 "CoreUObject",
                 "Engine",
+                "GameplayAbilities",
+                "KendalGameplayAbilities",
                 "Slate",
                 "SlateCore"
             }
